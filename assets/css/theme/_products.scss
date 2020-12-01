@@ -1,0 +1,11 @@
+.list_products{
+    .item{
+        -webkit-transition:  box-shadow .6s ease-out;
+        box-shadow: none;
+        border-radius: .6rem;
+        &:hover{
+            box-shadow: 1px 8px 20px #dedede;
+            -webkit-transition:  box-shadow .6s ease-out;
+        }
+    }
+}

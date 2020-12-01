@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+
+<!-- usar cabecalho do site original -->
+<div class="container-fluid">
+    
+    <i style="background: linear-gradient(0deg, rgba(66, 72, 139, 0.0001) 14.05%, #10124A 100%);
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+    left: 0;">
+    </i>
+
+    <i style="background: rgba(34, 41, 96, 0.8);
+    mix-blend-mode: multiply; position: absolute;
+    width: 100%;
+    height: 240px;
+    z-index: 10;
+    left: 0;">
+    </i>
+
+    <div class="row">
+        <div class="col-12" style="background-image: url('assets/img/img_topo.jpg'); background-size: cover; height: 240px;">
+            <h1 style="position: relative; z-index: 20;
+            color: #fff;
+            bottom: -50px;
+            left: 20px;
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 46px;
+            letter-spacing: -0.75px;">Área do Cliente</h1>
+        </div>
+    </div>
+</div>
+<!-- // usar cabecalho do site original -->
+
+
+
+<!-- Area do cliente -->
+<section id="area-cliente">
+    <div class="container-fluid">
+        <div class="row area-conteudo">
+            
+            <div class="col-lg-3 col-md-3 col-sm-12" id="sticky-sidebar">
+
+                <!-- meunu lateral -->
+                <div class="side-menu sticky-top">
+                    <ul>
+                        <li class="ativo">
+                            <a href="1_meus_dados.html">Meus dados</a>
+                        </li>
+                        <li>
+                            <a href="2_meus_pedidos.html">Meus pedidos</a>
+                        </li>
+                        <li>
+                            <a href="3_meus_certificados.html">Meus certificados</a>
+                        </li>
+                        <li>
+                            <a href="4_minhas_empresas.html">Minhas empresas</a>
+                        </li>
+                        <li>
+                            <a href="5_sair.html">Sair</a>
+                        </li>                                                                             
+                    </ul>
+                </div>
+                <!-- / meunu lateral -->
+
+                <!-- meunu topo só aparece no mobile -->
+                <div class="topo-menu">
+                    
+                    <div data-toggle="collapse" data-target="#menu-mob" class="hamburger hamburger--squeeze">
+                        <div class="hamburger-box">
+                          <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                      
+                    <ul id="menu-mob" class="collapse">
+                        <li class="ativo">
+                            <a href="1_meus_dados.html">Meus dados</a>
+                        </li>
+                        <li>
+                            <a href="2_meus_pedidos.html">Meus pedidos</a>
+                        </li>
+                        <li>
+                            <a href="3_meus_certificados.html">Meus certificados</a>
+                        </li>
+                        <li>
+                            <a href="4_minhas_empresas.html">Minhas empresas</a>
+                        </li>
+                        <li>
+                            <a href="5_sair.html">Sair</a>
+                        </li>                                                                             
+                    </ul>
+                </div>
+                <!-- / meunu topo só aparece no mobile -->
+
+            </div>
+
+
+
+            <div class="col-lg-9 col-md-9 col-sm-12" id="main">
+
+                <!-- area dos formulários -->
+                <div class="area-forms">
+                    
+                    <!-- dados pessoa fisica -->
+                    <form action="" id="form_pf">
+                        <div class="row">
+
+                            <div class="ac-box-titulo ac-box-titulo-lf col-12">
+                                <h2>Alterar dados pessoa física</h2>
+                            </div>
+
+                            <!-- este campo já entra preenchido e desabilitado -->
+                            <div class="col-lg-3 col-md-6">
+                                <label for="">CPF do Titular *</label>
+                                <input type="text" name="pf_cpf_titular" value="011.992.123-90" disabled="true">
+                            </div>
+                            <!-- este campo já entra preenchido e desabilitado -->
+                            <div class="col-lg-3 col-md-6">
+                                <label for="">Data de Nascimento *</label>
+                                <input type="text" name="pf_data_nascimento" value="25/12/2000" disabled="true">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <label for="pf_nome_completo">Nome Completo *</label>
+                                <input type="text" name="pf_nome_completo">
+                            </div>                                            
+
+                            <div class="col-lg-6 col-md-12">
+                                <label for="">Nome Completo *</label>
+                                <input type="text" name="pf_nome_completo">
+                            </div> 
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="">Telefone *</label>
+                                <input type="tel" name="pf_telefone">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="pf_cep">CEP *</label>
+                                <input type="text" name="pf_cep">
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <label for="pf_estado">Estado *</label>
+                                <select name="pf_estado" required="">
+                                    <option value="">Selecione</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-6 col-md-8">
+                                <label for="pf_cidade">Cidade *</label>
+                                <input type="text" name="pf_cidade">
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="pf_bairro">Bairro *</label>
+                                <input type="text" name="pf_bairro">
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <label for="pf_rua">Rua *</label>
+                                <input type="text" name="pf_rua">
+                            </div>
+
+                            <div class="col-lg-2 col-md-6">
+                                <label for="pf_numero">Número *</label>
+                                <input type="text" name="pf_numero">
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="pf_complemento">Compl.</label>
+                                <input type="text" name="pf_complemento">
+                            </div>
+
+                            <hr>
+
+                            <input type="submit" value="alterar dados" class="ac_bto_enviar ac_bto_center ac_bto_bottom">
+
+                        </div>
+                        <!-- /row -->
+                    </form>
+                    <!-- // dados pessoa fisica -->
+
+
+                    <!-- alterar senha -->
+                    <form action="" id="form_senha">
+                        <div class="row">
+
+                            <div class="ac-box-titulo ac-box-titulo-lf col-12">
+                                <h2>alterar senha</h2>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                                <label for="us_senha">Senha Atual *</label>
+                                <input type="password" name="us_senha">
+                            </div>        
+
+                            <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                                <label for="us_nova_senha">Nova Senha *</label>
+                                <input type="password" name="us_nova_senha">
+                            </div> 
+
+                            <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                                <label for="us_rep_nova_senha">Repetir Nova Senha *</label>
+                                <input type="password" name="us_rep_nova_senha">
+                            </div>
+
+                            <hr>
+
+                            <input type="submit" value="alterar senha" class="ac_bto_enviar ac_bto_center">
+
+                        </div>
+                        <!-- / row -->
+                    </form>
+                    <!-- / alterar senha -->
+
+                </div>
+                <!-- / area dos formulários -->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Area do cliente -->
+
+
+<!-- Uasar footer original -->
+<footer style="height: 200px; background-color: #222960;">
+</footer>
+<!-- Uasar footer original -->
+
+<!-- <script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap4/bootstrap.min.js"></script> -->
+<!-- <script src="assets/js/scripts.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

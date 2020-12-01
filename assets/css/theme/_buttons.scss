@@ -1,0 +1,40 @@
+input.btn, .btn-main{
+	background: $btn_primary;
+	color: #fff;
+	border-radius: $bd_radius;
+	border: 1px solid $primary;
+	text-transform: uppercase;
+	@include font-size(12);
+	font-weight: 700;
+	letter-spacing: 0.95px;
+	line-height: 14px;
+	&:hover{
+		background: #fff;
+		color: $btn_primary;
+		border: 1px solid #fff;
+	}
+}
+.btn-main-inverse{
+	background: transparent;
+	color: $btn_primary;
+	border-radius: $bd_radius;
+	border: 2px solid $primary;
+	text-transform: uppercase;
+	padding: 11px 44px;
+ 
+	&:hover{
+		background: $btn_primary;
+		color: #fff;
+		border: 2px solid $primary;
+	}
+}
+.btn-inverse{
+	background: #fff;
+	color: #000;
+	border-radius: $bd_radius;
+	text-transform: uppercase;
+	&:hover{
+		background: #000;   
+		color: #fff;
+	}
+}

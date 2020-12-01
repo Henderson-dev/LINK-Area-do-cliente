@@ -1,0 +1,51 @@
+/*
+=====================================================
+Meida Queries  768px
+=====================================================
+*/
+
+
+@media (min-width: 768px) {
+
+    #sticky-sidebar{
+        max-width: 30%;
+    }
+    #main{
+        max-width: 75%;
+    }
+
+
+    #area-cliente{
+        .area-conteudo{
+            flex-direction: row;
+
+            .linha-r::after{
+                content: '';
+                display: block;
+                width: 1px;
+                height: 93%;
+                border-right: 1px solid #D9DEE1;
+                position: absolute;
+                right: 20px;
+                top: 30px;
+            }               
+
+            .side-menu{
+                display: block;
+            }            
+            .topo-menu{
+                display: none;
+            }            
+            .area-forms {
+                width: 80%;
+                padding: 105px 0;
+            }            
+        
+        // .area-conteudo
+        }
+
+    // #area-cliente
+    }
+
+}
+// 768px

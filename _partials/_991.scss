@@ -1,0 +1,39 @@
+/*
+=====================================================
+Meida Queries  991px
+=====================================================
+*/
+
+
+@media (min-width: 991px) {
+
+    #sticky-sidebar{
+        max-width: 20%;
+    }
+    #main{
+        max-width: 85%;
+    }
+
+    #area-cliente{
+        .area-conteudo{
+
+            .area-forms{
+
+                .area-desktop{
+                    
+                    div[class^="col-"].col-protocolo{
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    } 
+                    
+                }
+            }
+        }
+    }
+
+
+}
+// 991px
+
+
